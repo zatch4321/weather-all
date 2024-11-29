@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather & Outfit Recommendation App - India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search-container">
+            <div class="search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search for a city or state..." spellcheck="false">
+                <button class="location-btn" title="Use current location">
+                    <i class="fas fa-location-dot"></i>
+                </button>
+                <button class="mic-btn" title="Voice search">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+            <ul class="suggestions-list"></ul>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="error">
+                <p>Invalid City Name. Please try again!</p>
+            </div>
+
+            <div class="weather">
+                <div class="weather-main">
+                    <i class="weather-icon wi"></i>
+                    <h1 class="temp">--°C</h1>
+                    <h2 class="city">City</h2>
+                    <p class="weather-description">Weather description will appear here</p>
+                </div>
+                
+                <div class="hourly-forecast">
+                    <h3>24-Hour Temperature Forecast</h3>
+                    <canvas id="tempChart"></canvas>
+                </div>
+
+                <div class="details">
+                    <div class="col">
+                        <i class="wi wi-humidity"></i>
+                        <div>
+                            <p class="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <i class="wi wi-strong-wind"></i>
+                        <div>
+                            <p class="wind">-- km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="air-quality">
+                    <h3>Air Quality</h3>
+                    <p class="aqi-level">--</p>
+                    <p class="aqi-description">--</p>
+                </div>
+                
+                <p class="outfit-recommendation">Outfit recommendation will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

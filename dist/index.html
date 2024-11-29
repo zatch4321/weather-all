@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Outfit Recommendation App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/index-DPuaX2AD.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-BZcJGg0T.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-D-lN5LSv.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="error" style="display: none;">
+            <p>Invalid City Name. Please try again!</p>
+        </div>
+
+        <div class="weather" style="display: none;">
+            <i class="weather-icon wi"></i>
+            <h1 class="temp">--°C</h1>
+            <h2 class="city">City</h2>
+            
+            <div class="hourly-forecast">
+                <h3>24-Hour Temperature Forecast</h3>
+                <canvas id="tempChart"></canvas>
+            </div>
+
+            <div class="details">
+                <div class="col">
+                    <i class="wi wi-humidity"></i>
+                    <div>
+                        <p class="humidity">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="wi wi-strong-wind"></i>
+                    <div>
+                        <p class="wind">-- km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="air-quality">
+                <h3>Air Quality</h3>
+                <p class="aqi-level">--</p>
+                <p class="aqi-description">--</p>
+            </div>
+            
+            <p class="outfit-recommendation">Outfit recommendation will appear here.</p>
+        </div>
+    </div>
+
+</body>
+</html>
